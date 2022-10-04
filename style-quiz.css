@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,600&family=Lato:ital,wght@0,300;1,400&display=swap');
+
+:root{
+	--primary-color: #F07DEA;
+	--primary-color-alt:#A460ED;
+	--secondary-color:#9FC9F3;
+}
+
+*{
+	margin: 0;
+}
+
+
+
+button{
+	border: none;
+}
+
+body{
+	font-family: 'Cormorant Garamond',
+	sans-serif;	
+	margin: 0px auto;
+	width: 100%;
+}
+
+.link{
+	text-decoration: none;
+	/* padding: .5rem 1rem; */
+	border-radius: 1.5rem;
+	margin: .3rem;
+}
+
+.list-non-bullet{
+	list-style: none;
+}
+
+.list-item-inline{
+	display: inline;
+	/* padding: 0rem .5rem; */
+}
+
+
+.navigation{
+	background-color: var(--primary-color);
+	color: white;
+	padding: 1rem;
+	max-width: 100%;
+}
+
+.navigation .nav-brand{
+	font-size: xx-large;
+}
+
+.navigation .nav-pills{
+	text-align: right;
+	font-size: larger;
+	/* border: 1px solid red; */
+}
+
+.quiz-heading, .quiz-subheading{
+	text-align: center;
+	margin-top: .5rem;
+}
+
+.quiz-form{
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.quiz-container{
+	margin-bottom: 1rem;
+}
+
+.quiz-container p{
+	color: var(--primary-color-alt);
+	font-weight: bold;
+	font-size: large;
+	margin-bottom: .5rem;
+}
+
+.quiz-container label{
+	color: var(--primary-color);
+	font-weight: bold;
+	font-size: large;
+	margin-right: .5rem;
+}
+
+.submit-quiz-div{
+	text-align: center;
+}
+
+#submit-quiz-answer{
+	margin-top: .5rem;
+	border: 3px solid var(--primary-color);
+	background-color: #9FC9F3;
+	padding: .8rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+	margin: auto;
+}
+
+.output-quiz{
+	color: var(--primary-color);
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.hypotenuse-container{
+	text-align: center;
+}
+
+.heading{
+	margin-top: 1rem;
+}
+
+.hypotenuse-container label,input{
+	display: block;
+	margin: auto;
+	margin-top: 1rem;
+}
+
+.quiz-container label ,input{
+	display:inline;
+}
+
+.hypotenuse-container label{
+	color: var(--primary-color-alt);
+	font-size: larger;
+	font-weight: bold;
+}
+
+.hypotenuse-container input{
+	border: 3px solid var(--primary-color-alt);
+	padding: .8rem;
+	border-radius: .5rem;
+}
+
+.calculate-btn{
+	margin: 1rem auto;
+	border: 2px solid var(--secondary-color);
+	padding: .8rem;
+	background-color: #9FC9F3;
+	font-size: large;
+	border-radius: .5rem;
+	display: block;
+}
+
+.hypotenuse-container p{
+	margin-top: 1rem;
+}
+
+.print-output{
+	margin-top: 1rem ;
+	color: var(--primary-color);
+	font-size: x-large;
+	font-weight: bold;
+	margin-bottom: 5rem;
+}
+
+
+
+
+.footer{
+	/* position: fixed; */
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-heading{
+	color: var(--primary-color-alt);
+	font-size: x-large;
+}
+
+.footer-icons i{
+	margin: .5rem;
+	font-size: xx-large;
+	color: var(--primary-color-alt);
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 400px){
+	.navigation .nav-pills{
+		font-size: small;
+	}
+	
+}

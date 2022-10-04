@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,600&family=Lato:ital,wght@0,300;1,400&display=swap');
+
+:root{
+	--primary-color: #F07DEA;
+	--primary-color-alt:#A460ED;
+	--secondary-color:#9FC9F3;
+}
+
+*{
+	margin: 0;
+}
+
+label,input{
+	display: block;
+	margin: auto;
+}
+
+button{
+	border: none;
+}
+
+body{
+	font-family: 'Cormorant Garamond',
+	sans-serif;	
+	margin: 0px auto;
+	width: 100%;
+}
+
+.link{
+	text-decoration: none;
+	/* padding: .5rem 1rem; */
+	border-radius: 1.5rem;
+	margin: .3rem;
+}
+
+.list-non-bullet{
+	list-style: none;
+}
+
+.list-item-inline{
+	display: inline;
+	/* padding: 0rem .5rem; */
+}
+
+
+.navigation{
+	background-color: var(--primary-color);
+	color: white;
+	padding: 1rem;
+	max-width: 100%;
+}
+
+.navigation .nav-brand{
+	font-size: xx-large;
+}
+
+.navigation .nav-pills{
+	text-align: right;
+	font-size: larger;
+	/* border: 1px solid red; */
+}
+
+.container{
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.container h1{
+	color: var(--primary-color-alt);
+	font-size:3rem;
+	margin-bottom: 1rem;
+}
+
+.container .angle-input{
+	margin-top: .5rem;
+	margin-bottom: 1rem;
+	border: 3px solid var(--secondary-color);
+	padding: .5rem;
+	border-radius: 1rem;
+}
+
+.container label{
+	font-size: 1.5rem;
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.container .check-triangle-btn{
+	background-color: var(--primary-color);
+	padding: 1rem;
+	border-radius: 1rem;
+	color: var(--primary-color-alt);
+	font-size: 1rem;
+}
+
+.container .check-triangle-output{
+	margin-top: .8rem;
+	font-size: 2rem;
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+.quiz-subheading{
+	color: var(--primary-color-alt);
+	font-size: 1.5rem;
+}
+
+
+
+.footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-heading{
+	color: var(--primary-color-alt);
+	font-size: x-large;
+}
+
+.footer-icons i{
+	margin: .5rem;
+	font-size: xx-large;
+	color: var(--primary-color-alt);
+	margin-bottom: 1rem;
+}
+
+@media (max-width: 400px){
+	.navigation .nav-pills{
+		font-size: small;
+	}
+	
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style-quiz.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Hypotenuse</title>
+</head>
+<body>
+
+	<nav class="navigation">
+		<div class="nav-brand">Fun with triangles</div>
+		<ul class="list-non-bullet nav-pills ">
+			<li class="list-item-inline ">
+				<a class="link link-active" href="/index.html">Is a triangle?</a>
+			</li>
+			<li class="list-item-inline">
+				<a class="link" href="/quiz.html">Triangle Quiz</a>
+			</li>
+			<li class="list-item-inline">
+				<a class="link" href="/hypotenuse.html">Find hypotenuse</a>
+			</li>
+			<li class="list-item-inline">
+				<a class="link" href="/areaOfTriangle.html">Find Area</a>
+			</li>
+		</ul>
+	</nav>
+	
+
+	<div class="hypotenuse-container">
+		<h1 class="heading">Calculate Hypotenuse</h1>
+		<label for="a">Enter base value (a)</label>
+		<input class="side-input" type="number" name="" id="a">
+		<label for="b">Enter height value(b)</label>
+		<input class="side-input" type="number" name="" id="b">
+		<button class="calculate-btn">Calculate Hypotenuse</button>
+
+		<p>
+			<h1>Hypotenuse formula</h1>
+			<h3>√(base² + height²)</h3>
+		</p>
+
+		<p class="print-output"></p>
+	</div>
+
+	<footer class="footer">
+		<h3 class="footer-heading">&#169 | 2022 | amlansaikia</h3>
+		<div class="footer-icons">
+			<a href="https://github.com/theweird0ne"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.instagram.com/the.weird.0ne__"><i class="fa-brands fa-instagram"></i></a>
+		</div>	
+	</footer>
+
+	<script src="hypotenuse.js"></script>
+</body>
+</html>

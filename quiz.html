@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Triangle Quiz</title>
+	<link rel="stylesheet" href="style-quiz.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	
+	<nav class="navigation">
+		<div class="nav-brand">Fun with triangles</div>
+		<ul class="list-non-bullet nav-pills ">
+			<li class="list-item-inline ">
+				<a class="link link-active" href="/index.html">Is a triangle?</a>
+			</li>
+			<li class="list-item-inline">
+				<a class="link" href="/quiz.html">Triangle Quiz</a>
+			</li>
+			<li class="list-item-inline">
+				<a class="link" href="/hypotenuse.html">Find hypotenuse</a>
+			</li>
+			<li class="list-item-inline">
+				<a class="link" href="/areaOfTriangle.html">Find Area</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<h1 class="quiz-heading">Quiz on triangles</h1>
+
+		<h3 class="quiz-subheading">For each answer you will get 1 point</h3>
+
+		<form action="" class="quiz-form">
+			<div class="quiz-container">
+				<p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+				<label for=""><input type="radio" name="question1" value="45°" id=""> 45°</label>
+				<label for=""><input type="radio" name="question1" value="90°" id=""> 90°</label>
+				<label for=""><input type="radio" name="question1" value="60°" id=""> 60°</label>
+			</div>
+			<div class="quiz-container">
+				<p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+				<label for=""><input type="radio" name="question2" value="obtuse" id="">obtuse</label>
+				<label for=""><input type="radio" name="question2" value="acute" id="">acute</label>
+				<label for=""><input type="radio" name="question2" value="right angle" id="">right angled</label>
+			</div>
+			<div class="quiz-container">
+				<p>A triangle can have</p>
+				<label for=""><input type="radio" name="question3" value="one right angle" id="">one right angle</label>
+				<label for=""><input type="radio" name="question3" value="two right angles" id="">two right angles</label>
+			</div>
+			<div class="quiz-container">
+				<p>Which of the following can form a right angled triangle?</p>
+				<label for=""><input type="radio" name="question4" value="14, 15, 26" id="">14, 15, 26</label>
+				<label for=""><input type="radio" name="question4" value="12, 16, 20" id="">12, 16, 20</label>
+			</div>
+			<div class="quiz-container">
+				<p>Which of the following triangles are always similar?</p>
+				<label for=""><input type="radio" name="question5" value="Equilateral triangle" id="">Equilateral triangle</label>
+				<label for=""><input type="radio" name="question5" value="Isosceles triangle" id="">Isosceles triangle</label>
+			</div>
+		</form>
+		<div class="submit-quiz-div"><button id="submit-quiz-answer">Submit Answers</button></div>
+
+		
+		<div class="output-quiz"></div>
+	</div>
+
+	<footer class="footer">
+		<h3 class="footer-heading">&#169 | 2022 | amlansaikia</h3>
+		<div class="footer-icons">
+			<a href="https://github.com/theweird0ne"><i class="fa-brands fa-github"></i></a>
+			<a href="https://www.instagram.com/the.weird.0ne__"><i class="fa-brands fa-instagram"></i></a>
+		</div>	
+	</footer>
+	<script src="quiz.js"></script>
+</body>
+</html>
