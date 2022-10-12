@@ -8,12 +8,14 @@ function calculateQuizScore(){
 	let score=0;
 	let index=0;
 
+	
 	const formResults=new FormData(quizForm);
 	for(let value of formResults.values()){
+		console.log(formResults[0].values());
 		if(value===correctQuizAnswers[index]){
-			score+=1;
+			score++;
 		}
-		index+=1;
+		index++;
 	}
 
 	output_quiz.innerText="Your score is "+score;

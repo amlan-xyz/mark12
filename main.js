@@ -11,13 +11,22 @@ function calculateAngleSum(angle1,angle2,angle3){
 }
 
 function isTriangle(){
-	let sumOfAngles=calculateAngleSum(Number(angle_input[0].value),Number(angle_input[1].value),Number(angle_input[2].value));
-	console.log(sumOfAngles)
-	if(sumOfAngles===180){
-		check_traingle_output.innerText="It is a triangle";
+	var angle_1=Number(angle_input[0].value);
+	var angle_2=Number(angle_input[1].value);
+	var angle_3=Number(angle_input[2].value);
+
+	if(angle_1<=0 || angle_2<=0 || angle_3<=0){
+		check_traingle_output.innerText="Please enter positive and non-zero angle values";
 	}else{
-		check_traingle_output.innerText="It is not a triangle";
+		let sumOfAngles=calculateAngleSum(angle_1,angle_2,angle_3);
+		if(sumOfAngles===180){
+			check_traingle_output.innerText="It is a triangle";
+		}else{
+			check_traingle_output.innerText="It is not a triangle";
+		}
 	}
+
+	
 }
 
 check_traingle.addEventListener('click',isTriangle);
