@@ -17,8 +17,7 @@ function findArea(){
 
 			const result = Math.sqrt(
 			S *(S - firstSideValue) *(S - secondSideValue) *(S - thirdSideValue));
-			console.log(result);
-			outputArea.innerText="Area of the triangle is "+result;
+			outputArea.innerText="Area of the triangle is "+result.toFixed(2);
 		}else{
 			outputArea.innerText="Enter a valid side lengths";
 		}
